@@ -27,6 +27,7 @@ class Application:
         self.soap = SoapHelper(self)
         self.config = config
         self.base_url = config['web']['base_url']
+        self.soap_url = config['soap']['soap_url']
         self.password = config['webadmin']['password']
 
     def is_valid(self):
